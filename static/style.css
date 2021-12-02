@@ -1,0 +1,259 @@
+html {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5em;
+    color: #282828;
+    text-align: justify;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "EB Garamond", serif;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.titulo-edicao {
+    margin-bottom: 32px;
+    font-size: 28px;
+    line-height: 1.5em;
+}
+
+.titulo-de-secao {
+    margin-bottom: 20px;
+}
+
+img {
+    border-radius: 2.3px;
+}
+
+h1 {
+    letter-spacing: 0.18em;
+    padding: 60px;
+    font-size: 80px;
+    text-align: center;
+
+    color: white;
+    background-color: #BD1616;
+}
+
+h3 {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+div.main {
+    display: flex;
+    justify-content: center;
+}
+
+div.jornal {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+
+
+
+    background-color: #eeeeee;
+    padding: 30px;
+
+    border-radius: 2px;
+    transition: all 0.5s;
+
+}
+
+.cabecalho {
+    animation: startup-jornal 2s;
+    background-color: #eeeeee;
+}
+
+.hero figure {
+    margin: 0;
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+    max-width: 100%;
+}
+
+figure img {
+    max-width: 100%;
+    display: block;
+}
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes startup-jornal {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(720deg);
+    }
+}
+
+.mapas {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.mapas img {
+    flex: 1;
+
+    width: calc(33% - 12px);
+}
+
+figcaption {
+    text-align: center;
+}
+
+.outras-noticias>.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.inner_noticias {
+    max-width: calc(50% - 24px);
+    min-width: 350px;
+}
+
+.carinhaecolheitera {
+    max-width: calc(50% - 24px);
+    min-width: 350px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .inner_noticias {
+        max-width: 100%;
+    }
+
+    .carinhaecolheitera {
+        max-width: 100%;
+    }
+}
+
+.separate-two-columns {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col {
+    max-width: calc(50% - 24px);
+    min-width: 350px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .col {
+        max-width: 100%;
+    }
+
+
+}
+
+
+.carinhaecolheitera>div>img {
+    width: 100%;
+}
+
+.imigrantes {
+    max-width: 50%;
+}
+
+.num-edicao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-and-entrevista {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.imigrantes {
+    max-width: calc(50% - 24px);
+    min-width: 350px;
+}
+
+.container-text {
+    max-width: calc(50% - 24px);
+    min-width: 350px;
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .imigrantes {
+        max-width: 100%;
+    }
+
+    .container-text {
+        max-width: 100%;
+    }
+}
+
+.questao {
+    color: #282828;
+    padding: 16px 8px;
+    background-color: #cccccc;
+    position: relative;
+    font-weight: 900;
+}
+
+.questao::before {
+    content: "?";
+    transform: rotate(30deg);
+    display: block;
+    position: absolute;
+    font-size: 60px;
+    right: 0;
+    bottom: 0;
+    color: #777777;
+}
+
+figure {
+    margin: 24px 0;
+}
+
+a {
+    padding: 12px 24px;
+    font-size: 24px;
+    line-height: 1.3em;
+    color: indigo;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6615a1;
+}
+
+.noticia {
+    background-color: white;
+    padding: 12px 24px;
+    margin-top: 20px;
+}
